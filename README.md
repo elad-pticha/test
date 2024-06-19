@@ -1,4 +1,6 @@
 # test
 
 
-<img src=x onerror=alert(1)>
+{% for js in page.customjs %}
+<script async type="text/javascript" src="{{ js }}"></script>
+{% endfor %}
